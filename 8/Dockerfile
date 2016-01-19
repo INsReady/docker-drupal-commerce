@@ -27,9 +27,10 @@ RUN cd modules \
 	&& cd .. \
 	&& chown -R www-data:www-data modules
 
-# install Drupal Console for future use
-RUN curl -LSs http://drupalconsole.com/installer | php \
-  && mv console.phar /usr/local/bin/drupal
+# install Drupal Console for future use #from https://drupalconsole.com/
+RUN curl https://drupalconsole.com/installer -L -o drupal.phar \
+  && mv drupal.phar /usr/local/bin/drupal \
+  && chmod +x /usr/local/bin/drupal
 
 # initialize Composer Manager to download external libraries
 RUN php modules/composer_manager/scripts/init.php \

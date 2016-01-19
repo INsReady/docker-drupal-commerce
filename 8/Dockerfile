@@ -3,7 +3,7 @@ FROM drupal:8.0
 
 # install the PHP extensions we need
 RUN apt-get update \
-  && apt-get install -y unzip git \
+  && apt-get install -y unzip \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& docker-php-ext-install bcmath
 
@@ -21,8 +21,9 @@ RUN cd modules \
 	&& tar -xzf address.tar.gz \
 	&& curl -fSL "http://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.x-dev.tar.gz" -o inline_entity_form.tar.gz \
 	&& tar -xzf inline_entity_form.tar.gz \
+  && curl -fSL "https://ftp.drupal.org/files/projects/profile-8.x-1.x-dev.tar.gz" -o profile.tar.gz \
+  && tar -xzf profile.tar.gz \
 	&& rm *.tar.gz \
-	&& git clone https://github.com/fago/profile2.git --branch=8.x-1.x ./profile \
 	&& cd .. \
 	&& chown -R www-data:www-data modules
 

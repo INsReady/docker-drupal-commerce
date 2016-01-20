@@ -16,13 +16,13 @@ Drupal Commerce is used to build eCommerce websites and applications of all size
 The basic pattern for starting a `drupal commerce` instance is:
 
 ```console
-$ docker run --name some-drupal -d insready/drupal-commece
+$ docker run --name some-drupal -d insready/drupal-commerce
 ```
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-drupal -p 8080:80 -d insready/drupal-commece
+$ docker run --name some-drupal -p 8080:80 -d insready/drupal-commerce
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -34,7 +34,7 @@ When first accessing the webserver provided by this image, it will go through a 
 ## MySQL
 
 ```console
-$ docker run --name some-drupal --link some-mysql:mysql -d insready/drupal-commece
+$ docker run --name some-drupal --link some-mysql:mysql -d insready/drupal-commerce
 ```
 
 -	Database type: `MySQL, MariaDB, or equivalent`
@@ -44,7 +44,7 @@ $ docker run --name some-drupal --link some-mysql:mysql -d insready/drupal-comme
 ## PostgreSQL
 
 ```console
-$ docker run --name some-drupal --link some-postgres:postgres -d insready/drupal-commece
+$ docker run --name some-drupal --link some-postgres:postgres -d insready/drupal-commerce
 ```
 
 -	Database type: `PostgreSQL`

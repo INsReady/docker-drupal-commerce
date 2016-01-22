@@ -35,12 +35,6 @@ RUN curl https://drupalconsole.com/installer -L -o drupal.phar \
 # temporary work around, see https://www.drupal.org/node/2652142
 RUN rm -rf vendor/jcalderonzumba/gastonjs
 
-# Long discussion in short: We need a perosnal token for automated build on Docker Hub. If you use our dedicate token for other things, our community will come at you
-RUN composer config github-oauth.github.com cc662847cb24d5b99c6f4ab58ef751ecf9c6d0ce
-
 # initialize Composer Manager to download external libraries
 RUN php modules/composer_manager/scripts/init.php \
   && composer drupal-update -v
-
-# Remove the token, so it won't be used by regular installation.
-RUN composer config --unset github-oauth.github.com

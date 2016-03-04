@@ -36,10 +36,6 @@ RUN curl https://drupalconsole.com/installer -L -o drupal.phar \
   && mv drupal.phar /usr/local/bin/drupal \
   && chmod +x /usr/local/bin/drupal
 
-# DC2.x is still under active dev, xdebug is useful
-RUN pecl install xdebug && \
-  docker-php-ext-enable xdebug
-
 # initialize Composer Manager to download external libraries
 RUN php modules/composer_manager/scripts/init.php \
   && composer drupal-update -v

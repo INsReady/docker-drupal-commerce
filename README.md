@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.x-2.0-alpha2`, `8.x-2.x`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/master/8/Dockerfile)
+-	[`8.x-2.0-alpha3`, `8.x-2.x`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/master/8/Dockerfile)
 
 This image is updated via pull requests to [the `INsReady/docker-drupal-commerce` GitHub repo](https://github.com/INsReady/docker-drupal-commerce).
 
 
 # What is Drupal Commerce?
 
-Drupal Commerce is used to build eCommerce websites and applications of all sizes. At its core it is lean and mean, enforcing strict development standards and leveraging the greatest features of Drupal 7 and major modules like Views and Rules for maximum flexibility.
+Drupal Commerce is used to build eCommerce websites and applications of all sizes. At its core it is lean and mean, enforcing strict development standards and leveraging the greatest features of Drupal and major modules like Views and Rules for maximum flexibility.
 
 > [Drupal Commerce Documentation](http://docs.drupalcommerce.org/)
 
@@ -69,7 +69,7 @@ View [license information](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

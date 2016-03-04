@@ -1,5 +1,5 @@
 # from http://docs.drupalcommerce.org/commerce-2/install.html
-FROM drupal:8.0
+FROM drupal:8.1
 
 # install the PHP extensions we need
 RUN apt-get update \
@@ -36,8 +36,9 @@ RUN curl https://drupalconsole.com/installer -L -o drupal.phar \
   && mv drupal.phar /usr/local/bin/drupal \
   && chmod +x /usr/local/bin/drupal
 
-# temporary work around, see https://www.drupal.org/node/2652142
-RUN rm -rf vendor/jcalderonzumba/gastonjs
+# DC2.x is still under active dev, xdebug is useful
+RUN pecl install xdebug && \
+  docker-php-ext-enable xdebug
 
 # initialize Composer Manager to download external libraries
 RUN php modules/composer_manager/scripts/init.php \

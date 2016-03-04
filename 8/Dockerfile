@@ -15,7 +15,7 @@ RUN curl -sS https://getcomposer.org/installer | php \
 RUN cd modules \
   && curl -fSL "http://ftp.drupal.org/files/projects/composer_manager-8.x-1.x-dev.tar.gz" -o composer_manager.tar.gz \
         && tar -xzf composer_manager.tar.gz \
-        && curl -fSL "http://ftp.drupal.org/files/projects/commerce-8.x-2.x-dev.tar.gz" -o commerce.tar.gz \
+        && curl -fSL "http://ftp.drupal.org/files/projects/commerce-8.x-2.0-alpha3.tar.gz" -o commerce.tar.gz \
         && tar -xzf commerce.tar.gz \
         && curl -fSL "http://ftp.drupal.org/files/projects/address-8.x-1.x-dev.tar.gz" -o address.tar.gz \
         && tar -xzf address.tar.gz \

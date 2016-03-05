@@ -1,5 +1,5 @@
 # from http://docs.drupalcommerce.org/commerce-2/install.html
-FROM drupal:8.1
+FROM drupal:8.0
 
 # install the PHP extensions we need
 RUN apt-get update \

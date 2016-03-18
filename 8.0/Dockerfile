@@ -23,7 +23,7 @@ RUN cd modules \
         && tar -xzf entity.tar.gz \
         && curl -fSL "http://ftp.drupal.org/files/projects/state_machine-8.x-1.x-dev.tar.gz" -o state_machine.tar.gz \
         && tar -xzf state_machine.tar.gz \
-        && curl -fSL "http://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.x-dev.tar.gz" -o inline_entity_form.tar.gz \
+        && curl -fSL "http://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-alpha5.tar.gz" -o inline_entity_form.tar.gz \
         && tar -xzf inline_entity_form.tar.gz \
         && curl -fSL "https://ftp.drupal.org/files/projects/profile-8.x-1.x-dev.tar.gz" -o profile.tar.gz \
         && tar -xzf profile.tar.gz \

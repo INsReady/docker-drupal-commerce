@@ -3,7 +3,7 @@ FROM drupal:8.0
 
 # install the PHP extensions we need
 RUN apt-get update \
-  && apt-get install -y unzip \
+  && apt-get install -y unzip git \
         && rm -rf /var/lib/apt/lists/* \
         && docker-php-ext-install bcmath
 
@@ -30,6 +30,12 @@ RUN cd modules \
         && rm *.tar.gz \
         && cd .. \
         && chown -R www-data:www-data modules
+
+# temporary workaround for composer issue until the next drupal release https://www.drupal.org/node/2664274
+RUN cd .. \
+  && curl -sSL "https://www.drupal.org/files/issues/2664274-37.patch" \
+  && git apply -v 2664274-37.patch
+  && rm 2664274-37.patch
 
 # install Drupal Console for future use, from https://drupalconsole.com/
 RUN curl https://drupalconsole.com/installer -L -o drupal.phar \

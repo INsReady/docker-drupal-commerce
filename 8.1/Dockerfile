@@ -32,9 +32,8 @@ RUN cd modules \
         && chown -R www-data:www-data modules
 
 # temporary workaround for composer issue until the next drupal release https://www.drupal.org/node/2664274
-RUN cd .. \
-  && curl -sSL "https://www.drupal.org/files/issues/2664274-37.patch" -o 2664274-37.patch \
-  && git apply -v 2664274-37.patch
+RUN curl -fSL "https://www.drupal.org/files/issues/2664274-37.patch" -o 2664274-37.patch \
+  && git apply -v 2664274-37.patch \
   && rm 2664274-37.patch
 
 # install Drupal Console for future use, from https://drupalconsole.com/

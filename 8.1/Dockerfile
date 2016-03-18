@@ -33,7 +33,7 @@ RUN cd modules \
 
 # temporary workaround for composer issue until the next drupal release https://www.drupal.org/node/2664274
 RUN cd .. \
-  && curl -sSL "https://www.drupal.org/files/issues/2664274-37.patch" \
+  && curl -sSL "https://www.drupal.org/files/issues/2664274-37.patch" -o 2664274-37.patch \
   && git apply -v 2664274-37.patch
   && rm 2664274-37.patch
 

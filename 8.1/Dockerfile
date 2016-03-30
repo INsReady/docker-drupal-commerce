@@ -14,7 +14,7 @@ RUN curl -sS https://getcomposer.org/installer | php \
 # Currenly, we need D8.1-dev
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-8.1.x-dev.tar.gz" -o drupal.tar.gz \
 	&& tar -xz --strip-components=1 -f drupal.tar.gz \
-	&& rm drupal.tar.gz \
+	&& rm drupal.tar.gz
 
 # install Drupal Commerce 2.x http://docs.drupalcommerce.org/v2/install.html
 RUN composer config repositories.drupal composer https://packagist.drupal-composer.org \

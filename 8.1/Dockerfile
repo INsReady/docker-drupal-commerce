@@ -1,7 +1,10 @@
 FROM drupal:8.1
 
 # install the PHP extensions we need
-RUN docker-php-ext-install bcmath
+RUN apt-get update \
+  && apt-get install -y git \
+        && rm -rf /var/lib/apt/lists/* \
+        && docker-php-ext-install bcmath
 
 # install Composer globally
 RUN curl -sS https://getcomposer.org/installer | php \

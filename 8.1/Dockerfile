@@ -12,5 +12,5 @@ RUN curl -sS https://getcomposer.org/installer | php \
 
 # install Drupal Commerce 2.x http://docs.drupalcommerce.org/v2/install.html
 RUN composer config repositories.drupal composer https://packagist.drupal-composer.org \
-  && composer require "drupal/commerce 8.2.x-dev" --prefer-dist \
+  && composer require "drupal/commerce 8.2.0-alpha4" --prefer-dist \
   && chown -R www-data:www-data modules

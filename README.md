@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`8.1-2.x`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/master/8.1/Dockerfile)
--	[`8.x-2.0-alpha4 ` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/8.x-2.0-alpha4/8.1/Dockerfile)
+-	[`8.x-2.0-beta1 ` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/8.x-2.0-beta1/8.1/Dockerfile)
 -	[`dev` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/master/dev/Dockerfile)
 
 This image is updated via pull requests to [the `INsReady/docker-drupal-commerce` GitHub repo](https://github.com/INsReady/docker-drupal-commerce).

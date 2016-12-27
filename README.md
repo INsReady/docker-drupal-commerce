@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.1-2.x`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/master/8.1/Dockerfile)
--	[`8.x-2.0-beta4 ` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/8.x-2.0-beta4/8.1/Dockerfile)
+-	[`8.2-2.x`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/master/8.2/Dockerfile)
+-	[`8.x-2.0-beta5` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/8.x-2.0-beta5/8.2/Dockerfile)
 -	[`dev` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/master/dev/Dockerfile)
 
 This image is updated via pull requests to [the `INsReady/docker-drupal-commerce` GitHub repo](https://github.com/INsReady/docker-drupal-commerce).
@@ -71,7 +71,7 @@ View [license information](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.2.
+This image is officially supported on Docker version 1.12.5.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

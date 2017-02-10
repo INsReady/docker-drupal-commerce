@@ -1,4 +1,4 @@
-FROM insready/drupal-dev:8.2
+FROM insready/drupal-dev:8.3
 
 # install the PHP extensions we need
 RUN docker-php-ext-install bcmath

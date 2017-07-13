@@ -1,4 +1,4 @@
-FROM drupal:8.2
+FROM drupal:8.3
 
 # install the PHP extensions we need
 RUN apt-get update \
@@ -12,5 +12,5 @@ RUN curl -sS https://getcomposer.org/installer | php \
 
 # install Drupal Commerce 2.x http://docs.drupalcommerce.org/v2/install.html
 RUN composer config repositories.drupal composer https://packages.drupal.org/8 \
-  && composer require "drupal/commerce 2.0.0-beta5" --prefer-dist \
+  && composer require "drupal/commerce 2.0.0-RC1" --prefer-dist \
   && chown -R www-data:www-data modules

@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.7-2.x`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/master/8.7/Dockerfile)
+-	[`8.8-2.x`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/master/8.8/Dockerfile)
 -	[`dev` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/master/dev/Dockerfile)
 
 This image is updated via pull requests to [the `INsReady/docker-drupal-commerce` GitHub repo](https://github.com/INsReady/docker-drupal-commerce).
@@ -67,14 +67,6 @@ The following Docker Hub features can help with the task of keeping your depende
 # License
 
 View [license information](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html) for the software contained in this image.
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 1.12.5.
-
-Support for older versions (down to 1.6) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

@@ -2,6 +2,8 @@
 
 -	[`9`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/master/9/Dockerfile)
 -	[`dev` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/master/dev/Dockerfile)
+-	[`8` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/master/8/Dockerfile)
+-	[`8-dev` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-commerce/blob/master/8-dev/Dockerfile)
 
 This image is updated via pull requests to [the `INsReady/docker-drupal-commerce` GitHub repo](https://github.com/INsReady/docker-drupal-commerce).
 

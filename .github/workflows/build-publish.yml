@@ -31,8 +31,8 @@ jobs:
             insready/drupal-commerce:9
             insready/drupal-commerce:latest
       -
-        name: Build and push - dev
-        id: docker_build_dev
+        name: Build and push - D9 dev
+        id: docker_build_9_dev
         uses: docker/build-push-action@v2
         continue-on-error: true
         with:
@@ -40,6 +40,17 @@ jobs:
           push: true
           tags: | 
             insready/drupal-commerce:dev
+            insready/drupal-commerce:9-dev
+      -
+        name: Build and push - D10 dev
+        id: docker_build_10_dev
+        uses: docker/build-push-action@v2
+        continue-on-error: true
+        with:
+          context: ./10-dev/
+          push: true
+          tags: | 
+            insready/drupal-commerce:10-dev
       -
         name: Update repo description
         uses: peter-evans/dockerhub-description@v2

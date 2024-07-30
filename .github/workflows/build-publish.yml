@@ -23,7 +23,7 @@ jobs:
       -
         name: Build and push - D10
         id: docker_build_10
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v4
         with:
           context: ./10/
           push: true
@@ -33,7 +33,7 @@ jobs:
       -
         name: Build and push - D9 dev
         id: docker_build_9_dev
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v4
         continue-on-error: true
         with:
           context: ./9-dev/
@@ -43,7 +43,7 @@ jobs:
       -
         name: Build and push - D10 dev
         id: docker_build_10_dev
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v4
         continue-on-error: true
         with:
           context: ./10-dev/
@@ -54,7 +54,7 @@ jobs:
       -
         name: Build and push - D11 dev
         id: docker_build_11_dev
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v4
         continue-on-error: true
         with:
           context: ./11-dev/

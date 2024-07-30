@@ -21,14 +21,14 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
-        name: Build and push - D9
-        id: docker_build_9
+        name: Build and push - D10
+        id: docker_build_10
         uses: docker/build-push-action@v2
         with:
-          context: ./9/
+          context: ./10/
           push: true
           tags: | 
-            insready/drupal-commerce:9
+            insready/drupal-commerce:10
             insready/drupal-commerce:latest
       -
         name: Build and push - D9 dev
@@ -36,10 +36,9 @@ jobs:
         uses: docker/build-push-action@v2
         continue-on-error: true
         with:
-          context: ./dev/
+          context: ./9-dev/
           push: true
           tags: | 
-            insready/drupal-commerce:dev
             insready/drupal-commerce:9-dev
       -
         name: Build and push - D10 dev
@@ -51,6 +50,17 @@ jobs:
           push: true
           tags: | 
             insready/drupal-commerce:10-dev
+            insready/drupal-commerce:dev
+      -
+        name: Build and push - D11 dev
+        id: docker_build_11_dev
+        uses: docker/build-push-action@v2
+        continue-on-error: true
+        with:
+          context: ./11-dev/
+          push: true
+          tags: | 
+            insready/drupal-commerce:11-dev
       -
         name: Update repo description
         uses: peter-evans/dockerhub-description@v2

@@ -24,6 +24,7 @@ jobs:
         name: Build and push - D10
         id: docker_build_10
         uses: docker/build-push-action@v4
+        continue-on-error: true
         with:
           context: ./10/
           push: true

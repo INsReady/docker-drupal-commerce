@@ -64,7 +64,7 @@ jobs:
             insready/drupal-commerce:11-dev
       -
         name: Update repo description
-        uses: peter-evans/dockerhub-description@v2
+        uses: peter-evans/dockerhub-description@v5
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
